@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Radio, Monitor, Globe, Instagram, Mic, Video, Users, Megaphone } from 'lucide-react';
+import { Radio, Globe, Instagram, Video } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -39,7 +39,7 @@ const Services = () => {
         "Banners estratégicos: Ubicación premium en header, lateral o dentro de notas",
         "Publinotas SEO: Contenido de marca optimizado para buscadores con link y contacto",
         "Campaña mensual: 30 días de exposición continua garantizada",
-        
+        "Métricas incluidas: Reportes de clicks, impresiones y engagement"
       ]
     },
     {
