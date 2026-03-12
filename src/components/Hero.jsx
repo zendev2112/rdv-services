@@ -1,55 +1,65 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Radio, Zap, TrendingUp, Play, Users, Mic } from 'lucide-react';
+import React from 'react'
+import { motion } from 'framer-motion'
+import {
+  Radio,
+  Mic,
+  Headphones,
+  Camera,
+  Video,
+  TvMinimalPlay,
+  Play,
+  MapPin,
+  Compass,
+  Users,
+  MessageCircle,
+  Calendar,
+  Instagram,
+  Wifi,
+  TrendingUp,
+  Zap,
+  Music,
+} from 'lucide-react'
+import { SiInstagram, SiTiktok, SiYoutube } from 'react-icons/si'
 
 const Hero = () => {
   const stats = [
-    { icon: <Users size={20} />, number: "50K+", label: "Oyentes" },
-    { icon: <Radio size={20} />, number: "24/7", label: "En Vivo" },
-    { icon: <TrendingUp size={20} />, number: "100+", label: "Marcas" }
-  ];
+    { icon: <SiInstagram size={20} />, number: '21.8K', label: 'Instagram' },
+    { icon: <SiTiktok size={20} />, number: '3.5K', label: 'TikTok' },
+    { icon: <SiYoutube size={20} />, number: '+1K', label: 'YouTube' },
+    { icon: <Radio size={20} />, number: '24/7', label: 'Radio En Vivo' },
+  ]
 
   return (
     <section className="hero">
       <div className="container">
         <div className="hero-layout">
-          <motion.div 
+          <motion.div
             className="hero-content"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <motion.div 
-              className="hero-badge"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-            >
-              <Radio size={20} />
-              <span>Radio del Volga</span>
-            </motion.div>
-            
-            <motion.h1 
+            <motion.h1
               className="hero-title"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              Potenciá tu marca con
-              <span className="gradient-text"> publicidad que conecta</span>
+              Impulsá tu marca con
+              <span className="gradient-text"> Radio del Volga</span>
             </motion.h1>
-            
-            <motion.p 
+
+            <motion.p
               className="hero-subtitle"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
             >
-              Desde radio FM hasta streaming y redes sociales. Ofrecemos soluciones 
-              publicitarias integrales para hacer crecer tu negocio.
+              Desde radio FM hasta streaming y redes sociales. Ofrecemos
+              soluciones publicitarias integrales para hacer crecer tu negocio.
             </motion.p>
-            
-            <motion.div 
+
+            <motion.div
               className="hero-buttons"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -65,23 +75,34 @@ const Hero = () => {
               </a>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="hero-stats"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
             >
-              {stats.map((stat, index) => (
-                <div key={index} className="stat-item">
-                  <div className="stat-icon">{stat.icon}</div>
-                  <div className="stat-number">{stat.number}</div>
-                  <div className="stat-label">{stat.label}</div>
-                </div>
-              ))}
+              <motion.h3
+                className="stats-title"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.1, duration: 0.6 }}
+              >
+                Nos siguen
+              </motion.h3>
+
+              <div className="stats-items-row">
+                {stats.map((stat, index) => (
+                  <div key={index} className="stat-item">
+                    <div className="stat-icon">{stat.icon}</div>
+                    <div className="stat-number">{stat.number}</div>
+                    <div className="stat-label">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
             </motion.div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             className="hero-visual"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -90,26 +111,56 @@ const Hero = () => {
             <div className="visual-container">
               <div className="main-circle">
                 <div className="circle-content">
-                  <Mic size={48} />
-                  <span>AL AIRE</span>
+                  <img
+                    src="https://res.cloudinary.com/dptdloagw/image/upload/v1773229447/logo_ekjvir.svg"
+                    alt="Radio del Volga"
+                    style={{ width: '4rem', height: '4rem' }}
+                  />
                 </div>
               </div>
-              
+
               <div className="orbit-item orbit-1">
-                <Radio size={24} />
+                <Mic size={24} />
               </div>
               <div className="orbit-item orbit-2">
-                <Play size={24} />
+                <Headphones size={24} />
               </div>
               <div className="orbit-item orbit-3">
-                <TrendingUp size={24} />
+                <Music size={24} />
+              </div>
+              <div className="orbit-item orbit-4">
+                <TvMinimalPlay size={24} />
+              </div>
+              <div className="orbit-item orbit-5">
+                <Instagram size={24} />
+              </div>
+              <div className="orbit-item orbit-6">
+                <Camera size={24} />
+              </div>
+              <div className="orbit-item orbit-7">
+                <Video size={24} />
+              </div>
+              <div className="orbit-item orbit-8">
+                <Play size={24} />
+              </div>
+              <div className="orbit-item orbit-9">
+                <MapPin size={24} />
+              </div>
+              <div className="orbit-item orbit-10">
+                <Compass size={24} />
+              </div>
+              <div className="orbit-item orbit-11">
+                <MessageCircle size={24} />
+              </div>
+              <div className="orbit-item orbit-12">
+                <Calendar size={24} />
               </div>
             </div>
           </motion.div>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
