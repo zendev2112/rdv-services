@@ -140,7 +140,7 @@ const ScreenMockup = ({ id }) => {
   if (id === 'radio') {
     return (
       <div className="mockup-radio">
-        <div className="mockup-radio-freq">FM 97.7</div>
+        <div className="mockup-radio-freq">FM 99.5</div>
         <div className="mockup-wave-bars">
           {[0.4, 0.7, 1, 0.6, 0.9, 0.5, 1, 0.7, 0.4, 0.8].map((h, i) => (
             <motion.div
