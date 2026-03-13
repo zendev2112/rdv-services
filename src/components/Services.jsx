@@ -17,6 +17,7 @@ const Services = () => {
       subtitle: 'Programa Streaming Mensual Premium',
       description:
         'Nuestro programa estrella con Aqua, Claudio y Andy. Contenido exclusivo que genera conversación y engagement genuino con tu audiencia.',
+      href: 'https://rdv-ultima-cena.vercel.app',
       features: [
         'Sponsor con agradecimientos: Mención verbal + presencia en descripción del video',
         'PNT integrado: Mención comercial natural dentro de la charla, sin cortes publicitarios',
@@ -31,6 +32,7 @@ const Services = () => {
       subtitle: 'Cocina tradicional de los alemanes del Volga',
       description:
         'Un ciclo gastronómico dedicado a recuperar y volver a poner en circulación las recetas tradicionales de los alemanes del Volga en el sudoeste bonaerense. Strudel, kreppel, knödel, panes caseros y platos de campo que durante décadas se transmitieron de generación en generación.',
+      href: 'https://rdv-recetas-volga.vercel.app',
       features: [
         'Ciclo completo: Preservación de recetas tradicionales con origen e historia cultural',
         'Sponsor con agradecimientos: Mención del sponsor + presencia en descripción del video',
@@ -133,6 +135,16 @@ const Services = () => {
                   <li key={idx}>{feature}</li>
                 ))}
               </ul>
+              {service.href && (
+                <a
+                  href={service.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="service-cta-btn"
+                >
+                  Conocé Más
+                </a>
+              )}
             </motion.div>
           ))}
         </div>
