@@ -14,7 +14,7 @@
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, #ff6b6b, #4ecdc4, #45b7d1);
+    background: linear-gradient(135deg, #FF0000, #FF6B35, #FFB700);
     background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -52,7 +52,7 @@
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(135deg, #FF0000, #FF6B35);
     border: none;
     padding: 15px 30px;
     border-radius: 50px;
@@ -67,7 +67,7 @@
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
 }
 
 .btn-secondary {
@@ -146,7 +146,7 @@
 }
 
 .header-nav a:hover {
-    color: #4ecdc4;
+    color: #FF0000;
 }
 
 .mobile-menu-toggle {
@@ -160,7 +160,7 @@
 }
 
 .mobile-menu-toggle:hover {
-    color: #4ecdc4;
+    color: #FF0000;
 }
 
 .mobile-nav {
@@ -271,8 +271,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 20% 80%, rgba(255, 107, 107, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(78, 205, 196, 0.1) 0%, transparent 50%);
+    background: radial-gradient(circle at 20% 80%, rgba(255, 0, 0, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 107, 53, 0.1) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -308,6 +308,7 @@ body {
     font-size: clamp(2.5rem, 6vw, 4rem);
     font-weight: 800;
     line-height: 1.1;
+    margin-top: 60px;
     margin-bottom: 30px;
 }
 
@@ -373,7 +374,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-    color: #4ecdc4;
+    color: #FF0000;
 }
 
 .stat-number {
@@ -409,7 +410,7 @@ body {
     transform: translate(-50%, -50%);
     width: 180px;
     height: 180px;
-    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(135deg, #FF0000, #FF6B35);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -442,7 +443,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #4ecdc4;
+    color: #FF0000;
     animation: orbit 8s linear infinite;
 }
 
@@ -528,7 +529,7 @@ body {
 .service-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(135deg, #FF0000, #FF6B35);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -571,7 +572,7 @@ body {
 
 .service-features li::before {
     content: '•';
-    color: #4ecdc4;
+    color: #FF0000;
     position: absolute;
     left: 0;
 }
@@ -580,7 +581,7 @@ body {
     display: inline-block;
     margin-top: 25px;
     padding: 12px 32px;
-    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(135deg, #FF0000, #FF6B35);
     border-radius: 50px;
     color: white;
     font-weight: 600;
@@ -607,8 +608,8 @@ body {
 }
 
 .package-card.popular {
-    border-color: #ff6b6b;
-    background: rgba(255, 107, 107, 0.05);
+    border-color: #FF0000;
+    background: rgba(255, 0, 0, 0.05);
 }
 
 .popular-badge {
@@ -616,7 +617,7 @@ body {
     top: -15px;
     left: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(135deg, #FF0000, #FF6B35);
     color: white;
     padding: 8px 20px;
     border-radius: 20px;
@@ -634,7 +635,7 @@ body {
 .package-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(135deg, #FF0000, #FF6B35);
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -657,7 +658,7 @@ body {
 .package-price {
     font-size: 2rem;
     font-weight: 700;
-    color: #4ecdc4;
+    color: #FF0000;
 }
 
 .package-features {
@@ -675,7 +676,7 @@ body {
 }
 
 .package-features li svg {
-    color: #4ecdc4;
+    color: #FF0000;
     flex-shrink: 0;
 }
 
@@ -706,7 +707,7 @@ body {
 }
 
 .contact-item svg {
-    color: #4ecdc4;
+    color: #FF0000;
     margin-top: 2px;
     flex-shrink: 0;
 }
@@ -743,7 +744,7 @@ body {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #4ecdc4;
+    border-color: #FF0000;
     background: rgba(255, 255, 255, 0.08);
 }
 
@@ -807,7 +808,7 @@ body {
 
     .hero-title {
         font-size: 2.2rem;
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     .hero-subtitle {
@@ -919,7 +920,7 @@ body {
         font-size: 1.75rem;
         line-height: 1.2;
         margin-bottom: 20px;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .hero-subtitle {
@@ -1381,7 +1382,7 @@ body {
 
 .mockup-portal-band {
     height: 12px;
-    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(90deg, #FF0000, #FF6B35);
     border-radius: 3px;
 }
 
@@ -1453,7 +1454,7 @@ body {
 
 .mockup-wave-bar {
     width: 4px;
-    background: linear-gradient(180deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(180deg, #FF0000, #FF6B35);
     border-radius: 2px;
     height: 100%;
     transform-origin: center;
@@ -1550,7 +1551,7 @@ body {
 .signal-dot {
     width: 8px;
     height: 8px;
-    background: #4ecdc4;
+    background: #FF0000;
     border-radius: 50%;
     display: inline-block;
 }
