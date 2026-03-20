@@ -91,12 +91,12 @@
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
+    will-change: transform;
 }
 
 .header-container {
@@ -113,7 +113,6 @@
     gap: 16px;
     text-decoration: none;
     flex-shrink: 0;
-    margin-top: 20px;
 }
 
 .header-logo {
@@ -257,6 +256,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    padding-top: 80px;
 }
 
 html,
@@ -701,25 +701,28 @@ body {
 
 .contact-item {
     display: flex;
-    align-items: flex-start;
-    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
     margin-bottom: 25px;
 }
 
 .contact-item svg {
     color: #FF0000;
-    margin-top: 2px;
     flex-shrink: 0;
 }
 
 .contact-item strong {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
+    font-weight: 600;
 }
 
 .contact-item p {
     color: rgba(255, 255, 255, 0.7);
     margin: 0;
+    font-size: 0.95rem;
 }
 
 /* Form Styles */
@@ -746,6 +749,12 @@ body {
     outline: none;
     border-color: #FF0000;
     background: rgba(255, 255, 255, 0.08);
+}
+
+.contact-btn {
+    width: 100%;
+    justify-content: center;
+    gap: 12px;
 }
 
 .form-group input::placeholder,
@@ -888,6 +897,23 @@ body {
     .contact-content {
         grid-template-columns: 1fr;
         gap: 30px;
+        justify-items: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        text-align: center;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .contact-item {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-item>div {
+        text-align: center;
     }
 }
 
@@ -1072,6 +1098,23 @@ body {
     .form-card h3 {
         font-size: 1.2rem;
         margin-bottom: 20px;
+    }
+
+    .contact-info,
+    .contact-form {
+        text-align: center;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .contact-item {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-item>div {
+        text-align: center;
     }
 
     .contact-item {
