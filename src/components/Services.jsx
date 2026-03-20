@@ -97,7 +97,7 @@ const Services = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2>Nuestros Servicios</h2>
+          <h2>Nuestros productos</h2>
           <p>
             Soluciones publicitarias integrales para maximizar el alcance de tu
             marca

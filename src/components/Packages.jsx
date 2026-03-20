@@ -8,7 +8,7 @@ const Packages = () => {
       name: 'Presencia',
       subtitle: 'Básico',
       icon: <Zap size={24} />,
-      price: 'Consultar',
+      /* price: 'Consultar', */
       features: [
         'Radio 24/7: Mención comercial rotativa',
         'Primera Mañana / Pienso Positivo: Mención del sponsor',
@@ -20,7 +20,7 @@ const Packages = () => {
       name: 'Alcance',
       subtitle: 'Medio',
       icon: <Star size={24} />,
-      price: 'Consultar',
+      /* price: 'Consultar', */
       features: [
         'Primera Mañana & Pienso Positivo: Sponsor del programa',
         'Radio 24/7: Menciones comerciales rotativas',
@@ -33,7 +33,7 @@ const Packages = () => {
       name: 'Contenido',
       subtitle: 'Premium',
       icon: <Crown size={24} />,
-      price: 'Consultar',
+      /* price: 'Consultar', */
       features: [
         'La Última Cena / Recetas: Sponsor con agradecimientos',
         'La Última Cena / Recetas: Reels con presencia de marca',
@@ -46,7 +46,7 @@ const Packages = () => {
       name: 'Personalizado',
       subtitle: 'A medida',
       icon: <Zap size={24} />,
-      price: 'Consultar',
+      /* price: 'Consultar', */
       features: [
         'La Última Cena: Integración de marca',
         'Recetas del Volga: Uso del producto',
@@ -128,7 +128,7 @@ const Packages = () => {
                 href="#contact"
                 className={pkg.popular ? 'btn-primary' : 'btn-secondary'}
               >
-                Contratar Ahora
+                Consultar
               </a>
             </motion.div>
           ))}

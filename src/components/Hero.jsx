@@ -19,11 +19,11 @@ import {
   Zap,
   Music,
 } from 'lucide-react'
-import { SiInstagram, SiTiktok, SiYoutube } from 'react-icons/si'
+import { SiInstagram, SiTiktok, SiYoutube, SiWhatsapp } from 'react-icons/si'
 
 const Hero = () => {
   const stats = [
-    { icon: <SiInstagram size={20} />, number: '21.8K', label: 'Instagram' },
+    { icon: <SiInstagram size={20} />, number: '21.9K', label: 'Instagram' },
     { icon: <SiTiktok size={20} />, number: '3.5K', label: 'TikTok' },
     { icon: <SiYoutube size={20} />, number: '+1K', label: 'YouTube' },
     { icon: <Radio size={20} />, number: '24/7', label: 'Radio En Vivo' },
@@ -55,8 +55,8 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
             >
-              Desde radio FM hasta streaming y redes sociales. Ofrecemos
-              soluciones publicitarias integrales para hacer crecer tu negocio.
+              Contenido audiovisual, redes sociales y radio en vivo para generar
+              presencia constante con propuestas pensadas para cada formato.
             </motion.p>
 
             <motion.div
@@ -70,7 +70,7 @@ const Hero = () => {
                 Ver Paquetes
               </a>
               <a href="#contact" className="btn-secondary">
-                <Zap size={20} />
+                <SiWhatsapp size={20} />
                 Contactar
               </a>
             </motion.div>
